@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     newsBtn.addEventListener('click', () => {
         responseText.textContent = '...calling backend...';
         fetch(vercelApiUrl, {
-            method: 'GET',
+            method: 'POST',
         })
         .then(response => response.json())
         .then(data => {
