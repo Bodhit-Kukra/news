@@ -11,7 +11,7 @@ if not key:
     raise ValueError("NEWS_API_KEY is not set in the environment.")
 
 app = Flask(__name__)
-CORS(app, origins="https://bodhit-kukra.github.io")
+CORS(app, origins="https://bodhit-kukra.github.io/news")
 
 @app.route("/api/app", methods=["GET"])
 def get_news():
