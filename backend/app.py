@@ -25,10 +25,6 @@ def get_news():
     except KeyError as e:
         print(f"Key not found {e}")
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 @app.route("/api/get_news", methods = ["POST"])
 def call_get_news():
     result = get_news()
