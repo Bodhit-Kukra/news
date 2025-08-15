@@ -11,7 +11,9 @@ if not key:
     raise KeyError("Key not Found")
 
 app = Flask(__name__)
-CORS(app)
+
+github_pages_url = "https://bodhit-kukra.github.io" 
+CORS(app, resources={r"/api/*": {"origins": github_pages_url}})
 
 def get_news():
     url = f"https://newsapi.org/v2/top-headlines?country=us&apiKey={key}"
