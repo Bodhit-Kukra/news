@@ -27,7 +27,7 @@ def get_news():
     except KeyError as e:
         print(f"Key not found {e}")
 
-@app.route("/api/get_news", methods = ["POST"])
+@app.route("/api/app", methods = ["POST"])
 def call_get_news():
     result = get_news()
     return jsonify(result)
