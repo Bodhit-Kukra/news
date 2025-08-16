@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const newsBtn = document.getElementById("btn_get_news");
     const responseText = document.getElementById("response_text");
 
-    vercelApiUrl = "https://news-hazel-xi.vercel.app/api/app"
+    vercelApiUrl = "https://news-git-main-bodhits-projects-327eb862.vercel.app/api/app"
     
     newsBtn.addEventListener('click', () => {
         responseText.textContent = '...calling backend...';
