@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             responseText.textContent = ""
             for (i = 0; i < data.articles.length; i++) {
                 const newParagraph = document.createElement('p');
-                newParagraph.textContent = data.articles[i].content;
+                newParagraph.textContent = data.articles[i].title;
                 responseText.appendChild(newParagraph);
             }
         })
